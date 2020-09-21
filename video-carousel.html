@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+
+<style>
+    .swiper-container {
+        
+        height: auto;
+        max-width: 1400px !important;
+        padding: 15px 0 ;
+        
+
+    }
+
+    @media only screen and (max-width: 660px) {
+        .swiper-container {
+        
+           height: auto;
+        }
+
+        .swiper-button-prev{
+           display: none !important;
+        }
+
+        .swiper-button-next{
+          display: none !important;
+        }
+
+        .swiper-pagination-bullet {
+           display: none !important;
+
+        }
+
+        
+    }
+    .swiper-wrapper {
+        width: 100% !important;
+        max-width: 1400px !important;
+        display: flex;
+        flex-direction: row;
+    }
+    .swiper-slide {
+        width: 100% !important;
+        max-width: 1400px !important;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center !important;
+        flex-wrap: wrap !important; 
+    }
+    .item {
+        width: 100%;
+        max-width: 300px;
+        margin: 15px;
+     
+    }
+    .swiper-pagination{
+        bottom: 0% !important;
+        left: 48% !important;
+        display:  flex !important;
+        flex-direction: row !important;
+        width: 50px !important;
+    }
+    .swiper-pagination-bullet {
+        margin-left: 5px !important;
+        margin-right: 5px !important;
+        background-color: #5c8f19c2 !important;
+    }
+
+    .swiper-button-prev{
+        color: #c2e990 !important;
+    }
+
+    .swiper-button-next{
+        color: #c2e990 !important;
+    }
+    
+</style>
+</head>
+<body>
+
+    <!-- Slider main container -->
+    <div class="swiper-container">
+    <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+                <div class="item"><iframe width="300" height="auto" src="https://www.youtube.com/embed/IryOMlGG3ag" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                <div class="item"><iframe width="300" height="auto" src="https://www.youtube.com/embed/Z5Uh6lPdSkk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                <div class="item"><iframe width="300" height="auto" src="https://www.youtube.com/embed/bzLcbH4J2Zs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                <div class="item"><iframe width="300" height="auto" src="https://www.youtube.com/embed/s5jtvpfBLgs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+            </div>
+            <div class="swiper-slide">
+                <div class="item"><iframe width="300" height="auto" src="https://www.youtube.com/embed/IryOMlGG3ag" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                <div class="item"><iframe width="300" height="auto" src="https://www.youtube.com/embed/Z5Uh6lPdSkk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                <div class="item"><iframe width="300" height="auto" src="https://www.youtube.com/embed/bzLcbH4J2Zs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                <div class="item"><iframe width="300" height="auto" src="https://www.youtube.com/embed/s5jtvpfBLgs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+              </div>
+            <div class="swiper-slide">
+                <div class="item"><iframe width="300" height="auto" src="https://www.youtube.com/embed/IryOMlGG3ag" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                <div class="item"><iframe width="300" height="auto" src="https://www.youtube.com/embed/Z5Uh6lPdSkk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                <div class="item"><iframe width="300" height="auto" src="https://www.youtube.com/embed/bzLcbH4J2Zs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                <div class="item"><iframe width="300" height="auto" src="https://www.youtube.com/embed/s5jtvpfBLgs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                </div>
+        
+        </div>
+    <!-- If we need pagination -->
+    <div class="swiper-pagination"></div>
+
+    <!-- If we need navigation buttons -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+
+</div>
+
+      <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+      <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+      <script>
+        var mySwiper = new Swiper('.swiper-container', {
+            // Optional parameters
+            direction: 'horizontal',
+            loop: true,
+
+            // If we need pagination
+            pagination: {
+                el: '.swiper-pagination',
+            },
+
+            // Navigation arrows
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+
+            // And if we need scrollbar
+            scrollbar: {
+                el: '.swiper-scrollbar',
+            },
+        })
+      </script>
+</body>
+</html>
